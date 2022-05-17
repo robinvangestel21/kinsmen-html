@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&display=swap');
+
+$creme: #E7E5E1;
+$white: #FFFFFF;
+$black: #1A1A1A;
+$grey: #333333;
+
+$padding-work: 30px;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+@mixin disableStandardButton{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+// General settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, a, button{
+    font-family: 'Barlow', sans-serif;
+    font-weight: $regular;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'DM Serif Display', serif;
+    font-weight: $regular;
+}
+
+button,
+button:focus {
+    @include disableStandardButton();
+}
